@@ -1,0 +1,31 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .Toast {
+    color: white;
+    background: green;
+    margin: auto;
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .btn-hide {
+    border-radius: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+  }
+  
+  .btn-show {
+    color: white;
+    margin: 1rem;
+    width: 5rem;
+    height: 2rem;
+    margin: auto;
+    background: orangered;
+    border-radius: 0.5rem;
+  }
+  

@@ -1,0 +1,162 @@
+.header {
+    text-align: center;
+  }
+
+
+  .outer{
+
+    display: flex;
+  }
+  
+
+  .mt-0 {
+    margin-left: 20px !important;
+  }
+  .left{
+    margin-top: 20px;
+    background-color: aqua;
+    margin-left: 8px;
+  }
+
+/*   
+    .te1 {border:0;outline:0;}
+.te1:focus {outline:none!important;}
+    */
+
+  
+
+  .right{
+    background-color: white;
+    height:100%;
+    width:100%;
+    overflow:hidden; 
+    
+  }
+  .giga{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    /* margin-top: 10px; */
+    justify-content: center
+    
+  }
+
+  .up{
+    
+    background-color: white;
+    height: 30pc;
+    content: centre;
+  }
+
+  .outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-size: cover;
+    background-position: center;
+
+
+      }
+
+  .sidecontent{
+margin-top: 40px;
+margin-left: 50px;
+margin-right: 25px;
+
+/* justify-content: space-between; */
+display: flex;
+flex-wrap: wrap;
+        -ms-flex-wrap:wrap;
+  }
+
+.feed{
+  margin-left: 300px;
+  
+}
+
+.logo{
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-top: 70px ;
+}
+
+
+.backbox{
+background-color:#1e81b0;
+height: 200px;
+margin-bottom: 50px;
+
+}
+
+
+
+
+
+.card{
+  
+  background-color: white;
+  width: 420px;
+  display :flex;
+  flex-direction:  column;
+  overflow :hidden;
+  border-radius :rem;
+ height: 800px;
+ 
+
+}
+
+  .down{
+    background-color: white;
+    height:30pc;
+  }
+
+
+
+/* CSS */
+.button-26 {
+  appearance: button;
+  background-color: #1652F0;
+  border: 1px solid #1652F0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  line-height: 1.15;
+  overflow: visible;
+  padding: 5px 5px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 60px;
+  height: 39px;
+}
+
+.button-26:disabled {
+  opacity: .5;
+}
+
+.button-26:focus {
+  outline: 0;
+}
+
+.button-26:hover {
+  background-color: #0A46E4;
+  border-color: #0A46E4;
+}
+
+.button-26:active {
+  background-color: #0039D7;
+  border-color: #0039D7;
+}

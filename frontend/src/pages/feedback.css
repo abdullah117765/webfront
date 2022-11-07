@@ -1,0 +1,208 @@
+
+html, .body {
+    height: 100%;
+  }
+  
+  .body {
+    align-items: center;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    justify-content: center;
+    margin-left: 0;
+  }
+  
+  .icon[role="icon"] {
+      display: inline-block;
+      height: 1em;
+      vertical-align: middle;
+      width: 1em;
+  }
+  
+  .icon[role="icon"] > svg {
+      display: block;
+      fill: currentColor;
+      height: 100%;
+      width: 100%;
+  }
+  
+  .feedback {
+      border: solid 1px #eee;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px #0001;
+      box-sizing: border-box;
+      display: block;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 16pt 32pt;
+      position: relative;
+      user-select: none;
+      width: 300px;
+      height: 400px;
+      
+  }
+  
+  .feedback > header {
+      color: #343434;
+      margin-bottom: 1em;
+     
+  }
+  
+  .feedback > header h1 {
+      font-size: 1.5em;
+      margin-top: 100px;
+      
+      transition: color .3s ease;
+  }
+  
+  @keyframes feedback-done-title {
+      0%, 100% {
+          transform: scale(1);
+      }
+  
+      70%, 90% {
+          
+      }
+  }
+  
+  .feedback.done > header h1 {
+      animation: feedback-done-title .8s ease forwards;
+  }
+  
+  .feedback.done.done-negative > header { color: #f9423a; }
+  .feedback.done.done-neutral > header { color: #009ace; }
+  .feedback.done.done-positive > header { color: #3ab626; }
+  
+  .feedback.done > header .message {
+      position: relative;
+  }
+  
+  .feedback > header p {
+      color: #888b8d;
+      margin: 1em 0 0;
+      transition: all .3s ease;
+  }
+  
+  .feedback.done > header p {
+      opacity: 0;
+  }
+  
+  .feedback > header .message .done-message {
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      text-align: center;
+      transform: translateY(-50%);
+      transition: all .5s .5s ease;
+      width: 100%;
+  }
+  
+  .feedback.done > header .message .done-message {
+      opacity: .8;
+  }
+  
+  .feedback .icons {
+      align-items: center;
+      display: flex;
+      font-size: 1.4em;
+      height: 2em;
+      justify-content: center;
+      line-height: 1em;
+      position: relative;
+      width: 6em;
+  }
+  
+  .feedback .icons button {
+      all: unset;
+  
+      border-radius: 50%;
+      color: #888b8d;
+      cursor: pointer;
+      display: flex;
+      padding: .5em;
+      position: absolute;
+      transition: all .3s ease;
+  }
+  
+  .feedback .icons button:first-child {
+      left: 0;
+  }
+  
+  .feedback .icons button:nth-child(2) {
+      left: 2em;
+  }
+  
+  .feedback .icons button:last-child {
+      left: 4em;
+  }
+  
+  .feedback.done .icons button.selected {
+      left: 50%;
+      transform: translateX(-50%) scale(1.2);
+  }
+  
+  .feedback.done .icons button {
+      cursor: default;
+      pointer-events: none;
+  }
+  
+  .feedback .icons button::before,
+  .feedback .icons button::after {
+      background-color: currentColor;
+      border-radius: inherit;
+      content: '';
+      display: block;
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      width: 100%;
+  }
+  
+  .feedback:not(.done) .icons button:hover::before {
+      opacity: .1;
+  }
+  
+  .feedback .icons button::after {
+      transition: opacity .5s ease;
+  }
+  
+  @keyframes fill-feedback {
+      100% {
+          transform: scale(10);
+      }
+  }
+  
+  .feedback .icons button.selected::after {
+      animation: fill-feedback 5s linear forwards;
+      opacity: .1;
+  }
+  
+  .feedback .icons button.positive:hover,
+  .feedback .icons button.selected.positive { color: #3ab626; }
+  
+  .feedback .icons button.neutral:hover,
+  .feedback .icons button.selected.neutral { color: #009ace; }
+  
+  .feedback .icons button.negative:hover,
+  .feedback .icons button.selected.negative { color: #f9423a; }
+  
+  .feedback.done .icons button:not(.selected) {
+      opacity: 0;
+      pointer-events: none;
+  }
+  
+  .feedback .icons button:hover .icon {
+      transform: scale(1.2);
+  }
+  
+  .feedback .icons button.selected .icon {
+      transform: scale(1.4);
+  }
+  
